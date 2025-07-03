@@ -1,6 +1,6 @@
 # Kit Robot Básico 🤖
 
-![Foto de tu robot básico](URL_DE_LA_FOTO_DEL_KIT.jpg)
+![Foto de tu robot básico](https://insani.academy/wp-content/uploads/2025/07/Emsamble_2-v8.png)
 
 Este kit está diseñado para introducirte a los conceptos fundamentales de la robótica. Aprenderás a programar el ESP32 para interactuar con el mundo físico.
 
