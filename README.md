@@ -1,2 +1,29 @@
-# Insani-Robotics
-Códigos y lecciones para los kits de robótica educativa de Insani basados en ESP32. #STEM #Robótica #Educación
+# 🤖 Insani: Repositorio de Códigos para Kits Educativos ESP32
+
+![Logo de Insani](URL_DE_TU_LOGO.png)
+
+¡Bienvenido al centro de recursos de código abierto para los kits de robótica de **Insani**! Aquí encontrarás todos los códigos, lecciones y guías para sacar el máximo provecho a tu aprendizaje en el mundo de la electrónica y la programación con el ESP32.
+
+[![Estado del Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/tu-usuario/Insani-ESP32-Kits)
+[![Licencia MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 🚀 Nuestros Kits
+
+Aquí tienes la lista de kits disponibles. ¡Haz clic en uno para empezar!
+
+| Kit | Descripción | Nivel |
+| :--- | :--- | :--- |
+| 🤖 **[Kit Robot Básico](./Kit-Robot-Basico/)** | El punto de partida perfecto para aprender a controlar motores, leer sensores y más. | `Principiante` |
+| 🦾 **[Kit Brazo Robótico](./Kit-Brazo-Robotico/)** | Aprende sobre cinemática y control preciso con este increíble brazo robótico. | `Intermedio` |
+
+---
+
+## ¿Cómo Contribuir?
+
+¡Nos encanta la colaboración! Si quieres mejorar una lección o corregir un error, por favor lee nuestra [guía de contribución](./CONTRIBUTING.md).
+
+## Licencia
+
+Este proyecto está bajo la [Licencia MIT](./LICENSE).
