@@ -16,7 +16,7 @@ Aquí tienes la lista de kits disponibles. ¡Haz clic en uno para empezar!
 | Kit | Descripción | Nivel |
 | :--- | :--- | :--- |
 | 🤖 **[Kit Xplorer](./Kits-STEM/Kit-Xplorer/)** | El punto de partida perfecto para aprender a controlar motores, leer sensores y más. | `Principiante` |
-| 🦾 **[Kit Brazo Robótico](./Kit-Brazo-Robotico/)** | Aprende sobre cinemática y control preciso con este increíble brazo robótico. | `Intermedio` |
+| 🦾 **[Kit Brazo Robótico](./Kits-STEM/Kit-Xplorer/)** | Aprende sobre cinemática y control preciso con este increíble brazo robótico. | `Intermedio` |
 
 ---
 
