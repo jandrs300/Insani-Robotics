@@ -1,6 +1,6 @@
-# Kit Xplorer 🤖
+# Kit Brazo Robótico 🤖
 
-![Foto de tu robot básico](https://insani.academy/wp-content/uploads/2025/07/Emsamble_2-v8.png)
+![Foto de tu robot básico](https://insani.academy/wp-content/uploads/2025/07/emsamble_todo_blanco_7.png)
 
 Este kit está diseñado para introducirte a los conceptos fundamentales de la robótica. Aprenderás a programar el ESP32 para interactuar con el mundo físico.
 
