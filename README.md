@@ -1,4 +1,4 @@
-# 🤖 Insani: Repositorio de Códigos para Kits Educativos ESP32
+# Insani: Repositorio de Códigos para Kits Educativos ESP32
 
 ![Logo de Insani](https://insani.academy/wp-content/uploads/2025/07/logo_insani.png)
 
@@ -15,8 +15,9 @@ Aquí tienes la lista de kits disponibles. ¡Haz clic en uno para empezar!
 
 | Kit | Descripción | Nivel |
 | :--- | :--- | :--- |
-| 🤖 **[Kit Xplorer](./Kits-STEM/Kit-Xplorer/)** | El punto de partida perfecto para aprender a controlar motores, leer sensores y más. | `Principiante` |
-| 🦾 **[Kit Brazo Robótico](./Kits-STEM/Kit-Brazo-Robótico/)** | Aprende sobre cinemática y control preciso con este increíble brazo robótico. | `Intermedio` |
+| <img src="https://insani.academy/wp-content/uploads/2025/07/Emsamble_2-v8.png" width="40"> **[Kit Xplorer](./Kits-STEM/Kit-Xplorer/)** | El punto de partida perfecto para aprender a controlar motores, leer sensores y más. | `Principiante` |
+| <img src="https://insani.academy/wp-content/uploads/2025/07/emsamble_todo_blanco_7.png" width="40"> **[Kit Brazo Robótico](./Kits-STEM/Kit-Brazo-Robótico/)** | Aprende sobre cinemática y control preciso con este increíble brazo robótico. | `Intermedio` |
+
 
 ---
 
