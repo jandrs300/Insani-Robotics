@@ -1,8 +1,8 @@
-# Insani: Repositorio de Códigos para Kits Educativos ESP32
+# Insani: Repositorio de Códigos para Kits Educativos
 
 ![Logo de Insani](https://insani.academy/wp-content/uploads/2025/07/logo_insani.png)
 
-¡Bienvenido al centro de recursos de código abierto para los kits de robótica de **Insani**! Aquí encontrarás todos los códigos, lecciones y guías para sacar el máximo provecho a tu aprendizaje en el mundo de la electrónica y la programación con el ESP32.
+¡Bienvenido al centro de recursos de código abierto para los kits de robótica de **Insani**! Aquí encontrarás todos los códigos, lecciones y guías para sacar el máximo provecho a tu aprendizaje en el mundo de la electrónica y la programación.
 
 [![Estado del Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/tu-usuario/Insani-ESP32-Kits)
 [![Licencia MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
