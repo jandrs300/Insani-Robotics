@@ -17,7 +17,7 @@ En esta lección aprenderemos a hacer **Fading** (Desvanecimiento). En lugar de 
 ## 🔌 Materiales y Conexión
 
 * 1 x Arduino Nano
-* 1 x LED RGB (Con sus 3 resistencias).
+* 1 x LED RGB.
 
 ### ⚠️ Diagrama de Conexión (Nueva Configuración Estándar)
 Asegúrate de conectar los pines en el orden correcto para que los colores coincidan con el código:
@@ -27,7 +27,7 @@ Asegúrate de conectar los pines en el orden correcto para que los colores coinc
 * **Pata VERDE (G):** al Pin **D9** (PWM).
 * **Pata Larga (-):** a GND.
 
-*(Nota: No olvides las resistencias de 220Ω o 330Ω en cada pata de color).*
+*(Nota: No olvides las resistencias de 220Ω o 330Ω).*
 
 ![Diagrama LED RGB](./Conexion_F3_L3.png)
 
@@ -45,69 +45,6 @@ Para hacer un arcoíris fluido, dividimos el ciclo en 3 fases:
 1.  **De Rojo a Verde:** El Rojo se apaga poco a poco (-1), el Verde se enciende (+1).
 2.  **De Verde a Azul:** El Verde se apaga, el Azul se enciende.
 3.  **De Azul a Rojo:** El Azul se apaga, el Rojo se enciende.
-
----
-
-## 💾 Código Fuente: `03_Fading_Loop.ino`
-
-> **Nota para el Docente:** Este código incluye mejoras de lógica para evitar parpadeos y saltos en la transición de colores.
-
-    /*
-     * INSANI ROBOTICS - FUNDAMENTOS F3
-     * Lección 3: Arcoíris Automático (Fading RGB)
-     * ------------------------------------------------
-     * Objetivo: Transición fluida de colores (Spectrum).
-     * Pines: Rojo=11, Azul=10, Verde=9
-     */
-
-    // --- CONSTANTES DE HARDWARE ---
-    // Nueva configuración de pines Insani
-    const int PIN_ROJO  = 11;
-    const int PIN_AZUL  = 10;
-    const int PIN_VERDE = 9;
-
-    // --- CONFIGURACIÓN ---
-    const int TIEMPO_ESPERA = 10; // Velocidad: Menor número = Más rápido
-    const int BRILLO_MAX = 255;
-
-    // --- PROTOTIPOS ---
-    void establecerColor(int r, int g, int b);
-
-    void setup() {
-      pinMode(PIN_ROJO, OUTPUT);
-      pinMode(PIN_VERDE, OUTPUT);
-      pinMode(PIN_AZUL, OUTPUT);
-    }
-
-    void loop() {
-      // FASE 1: De ROJO puro a VERDE puro
-      // Rojo baja, Verde sube
-      for (int i = 0; i < BRILLO_MAX; i++) {
-        establecerColor(BRILLO_MAX - i, i, 0); // R, G, B
-        delay(TIEMPO_ESPERA);
-      }
-
-      // FASE 2: De VERDE puro a AZUL puro
-      // Verde baja, Azul sube
-      for (int i = 0; i < BRILLO_MAX; i++) {
-        establecerColor(0, BRILLO_MAX - i, i); 
-        delay(TIEMPO_ESPERA);
-      }
-
-      // FASE 3: De AZUL puro a ROJO puro
-      // Azul baja, Rojo sube
-      for (int i = 0; i < BRILLO_MAX; i++) {
-        establecerColor(i, 0, BRILLO_MAX - i);
-        delay(TIEMPO_ESPERA);
-      }
-    }
-
-    // Función auxiliar para enviar los valores a los pines
-    void establecerColor(int r, int g, int b) {
-      analogWrite(PIN_ROJO, r);
-      analogWrite(PIN_VERDE, g); // Pin 9
-      analogWrite(PIN_AZUL, b);  // Pin 10
-    }
 
 ---
 

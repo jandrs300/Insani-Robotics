@@ -25,14 +25,14 @@ En esta lección usaremos un **LED RGB**. Aunque parece un solo foco, por dentro
 
 * 1 x Arduino Nano
 * 1 x LED RGB (4 patas)
-* **3 x Resistencias** (220Ω o 330Ω) - *¡OJO! Necesitas una para cada color.*
+* 1 x Resistencias (220Ω o 330Ω) - *¡OJO! Necesitas una para GND.*
 
 ### Diagrama de Conexión
 El LED RGB tiene 4 patas. La más larga es la segunda.
-1.  **Pata 1 (Roja):** Al Pin **D11** (con resistencia).
-2.  **Pata 2 (Larga/GND):** A **GND** (directo, sin resistencia).
-3.  **Pata 3 (Azul):** Al Pin **D10** (con resistencia).
-4.  **Pata 4 (Verde):** Al Pin **D9** (con resistencia).
+1.  **Pata 1 (Roja):** Al Pin **D11** (directo, sin resistencia).
+2.  **Pata 2 (Larga/GND):** A **GND** (con resistencia).
+3.  **Pata 3 (Azul):** Al Pin **D10** (directo, sin resistencia).
+4.  **Pata 4 (Verde):** Al Pin **D9** (directo, sin resistencia).
 
 *(Nota: El orden Rojo/Verde/Azul puede variar según el fabricante del LED. Si al probarlo sale un color equivocado, solo intercambia los cables).*
 

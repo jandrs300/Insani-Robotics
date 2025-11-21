@@ -19,7 +19,7 @@ No todo es 0 o 255. En esta lección usaremos un potenciómetro para crear una *
 Necesitamos combinar el circuito del LED RGB con el del Potenciómetro.
 
 * 1 x Arduino Nano
-* 1 x LED RGB (Con sus 3 resistencias).
+* 1 x LED RGB.
 * 1 x Potenciómetro.
 
 ### Diagrama de Conexión
