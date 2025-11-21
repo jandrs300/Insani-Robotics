@@ -1,85 +1,55 @@
-# 🟢 F1: Entradas y Salidas Digitales (Lógica Binaria)
+# 🟢 Fundamento 1: Entradas y Salidas Digitales
 
-En este módulo aprenderemos el lenguaje básico de las máquinas: **ON (Encendido/1/HIGH)** y **OFF (Apagado/0/LOW)**. Todo robot, por complejo que sea, toma decisiones basándose en estas señales digitales.
+Bienvenido al primer paso de la ingeniería robótica. En este módulo, aprenderemos el "idioma" básico del Arduino: **El Código Binario (0 y 1)**.
 
-> **Objetivo:** Aprender a controlar LEDs y leer sensores digitales (botones y sensor de movimiento PIR).
+Antes de crear robots complejos, debemos dominar cómo enviar señales (Encender cosas) y cómo recibir señales (Leer botones o sensores).
 
----
-
-## 🛠️ Materiales Necesarios para este Módulo
-* 1 x Arduino Nano
-* 1 x Protoboard
-* 3 x LEDs (Rojo, Amarillo, Verde recomendados)
-* 3 x Resistencias de 220Ω (Para los LEDs)
-* 3 x Pulsadores (Push-buttons)
-* 3 x Resistencias de 10kΩ (Para los botones - Configuración Pull-Down)
-* 1 x Sensor de Movimiento PIR (HC-SR501)
-* Cables Jumper
+> **💡 Concepto Clave:**
+> En el mundo digital, solo existen dos estados:
+> * **HIGH (1):** Hay voltaje (5V). Significa "Sí", "Encendido", "Verdadero".
+> * **LOW (0):** No hay voltaje (0V/GND). Significa "No", "Apagado", "Falso".
 
 ---
 
-## 📘 Lección 1: Hola Mundo (Blink Externo)
-**Archivo:** `01_Hola_Mundo.ino`
+## 📂 Índice de Lecciones
 
-La práctica clásica. Encender y apagar un LED conectado a un pin digital.
+Este módulo está dividido en 4 prácticas progresivas. Te recomendamos seguirlas en orden.
 
-### 🔌 Conexión
-* **LED Pata Larga (+):** Al Pin **D2**.
-* **LED Pata Corta (-):** A GND (pasando por resistencia 220Ω).
-
-![Conexion LED Simple](./Conexion_F1_L1_Led.png)
-*(Sube tu imagen con este nombre: Conexion_F1_L1_Led.jpg)*
-
----
-
-## 📘 Lección 2: El Interruptor (Botón)
-**Archivo:** `02_El_Interruptor.ino`
-
-Aprenderemos a usar `digitalRead()`. Si presiono el botón, el LED se enciende. Si lo suelto, se apaga.
-
-### 🔌 Conexión
-* **LED:** Pin D2.
-* **Botón:** Pin **D3**. (Requiere resistencia de 10kΩ conectada a GND - Pull Down).
-
-![Conexion Boton Simple](./Conexion_F1_L2_Boton.png)
-*(Sube tu imagen con este nombre: Conexion_F1_L2_Boton.png)*
+| Lección | Título | Concepto Principal | Dificultad |
+| :--- | :--- | :--- | :---: |
+| **[📂 Lección 1](./L1_Hola_Mundo_Led)** | **Hola Mundo (LED)** | Configurar pines como `OUTPUT` y controlar tiempos. | ⭐ |
+| **[📂 Lección 2](./L2_Boton_Interruptor)** | **El Interruptor** | Configurar pines como `INPUT` y leer botones. | ⭐⭐ |
+| **[📂 Lección 3](./L3_Consola_Logica)** | **Consola de Control** | Manejar múltiples entradas y salidas a la vez. | ⭐⭐ |
+| **[📂 Lección 4](./L4_Sensor_PIR)** | **Sensor de Movimiento** | Usar un sensor industrial (PIR) que funciona con lógica digital. | ⭐⭐⭐ |
 
 ---
 
-## 📘 Lección 3: Consola de Control (3 LEDs + 3 Botones)
-**Archivo:** `03_Consola_3Botones.ino`
+## 🛠️ Inventario del Módulo
 
-Control independiente. Cada botón controla su propio LED. Ideal para entender la lógica de pines múltiples.
+Para completar **todas** las lecciones de esta carpeta, asegúrate de tener:
 
-### 🔌 Conexión
-* **LEDs:** Pines D2, D4, D6.
-* **Botones:** Pines D3, D5, D7.
-
-![Conexion 3 Botones 3 Leds](./Conexion_F1_L3_Consola.png)
-*(Sube tu imagen con este nombre: Conexion_F1_L3_Consola.jpg)*
-
----
-
-## 📘 Lección 4: Sensor de Movimiento (PIR)
-**Archivo:** `04_Sensor_PIR.ino`
-
-El sensor PIR funciona igual que un botón para Arduino: nos envía un "1" (HIGH) cuando detecta movimiento y un "0" (LOW) cuando no.
-
-### 🔌 Conexión
-* **VCC:** A 5V del Arduino.
-* **GND:** A GND del Arduino.
-* **OUT (Señal):** Al Pin **D2**.
-* **LED de Alarma:** Al Pin **D13** (O usar el integrado).
-
-![Conexion Sensor PIR](./Conexion_F1_L4_PIR.png)
-*(Sube tu imagen con este nombre: Conexion_F1_L4_PIR.jpg)*
+* **1 x Placa Arduino** (Nano, Uno o Mega).
+* **1 x Protoboard** y Cables Jumper.
+* **3 x LEDs** (Varios colores).
+* **3 x Resistencias 220Ω** (Para proteger los LEDs).
+* **3 x Pulsadores** (Push-buttons de 4 pines).
+* **3 x Resistencias 10kΩ** (Para configuración Pull-Down de botones).
+* **1 x Sensor PIR HC-SR501** (Para la Lección 4).
 
 ---
 
-## 🤖 Prompt para el Docente (Uso con IA)
-Copia esto en Gemini para explicar el concepto de "Pull-Down":
+## 🤖 Guía para el Docente (IA)
 
-> "Explícame la diferencia entre 'Ruido Eléctrico' y una señal limpia en Arduino. ¿Por qué necesitamos una resistencia 'Pull-Down' cuando usamos un botón? Usa una analogía con una puerta que el viento mueve si no tiene cerrojo."
+Si usas un asistente de IA (como Gemini) para preparar tu clase, usa este prompt para obtener una explicación teórica del módulo completo:
+
+> **Copia y pega esto:**
+> "Actúa como profesor de electrónica. Voy a enseñar el Módulo F1 (Entradas y Salidas Digitales).
+> 1. Explícame la diferencia entre una señal **Digital** y una **Analógica** usando una analogía simple (ej. una rampa vs. una escalera).
+> 2. ¿Por qué es importante definir en el `setup()` si un pin es `INPUT` o `OUTPUT`? ¿Qué pasa si me olvido?
+> 3. Dame 3 ejemplos de la vida cotidiana que funcionen con electrónica digital pura (Encendido/Apagado)."
 
 ---
-<div align="center"><b>Insani Robotics</b></div>
+
+<div align="center">
+    <b>Insani Robotics</b> - <i>"Donde empieza la lógica"</i>
+</div>
