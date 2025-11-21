@@ -24,8 +24,7 @@ En la lección anterior vimos números en la pantalla. Ahora usaremos esos núme
 * **Potenciómetro:** Igual que la lección anterior (Señal a A0).
 * **LED:** Pata larga al **Pin D3**, pata corta a GND (con resistencia).
 
-![Diagrama Conexión Dimmer](./Conexion_F2_L2.jpg)
-*(Sube tu imagen con este nombre: Conexion_F2_L2.jpg)*
+![Diagrama Conexión Dimmer](./Conexion_F2_L2.png)
 
 ---
 

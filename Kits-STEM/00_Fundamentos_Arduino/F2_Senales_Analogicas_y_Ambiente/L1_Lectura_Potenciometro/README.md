@@ -29,8 +29,7 @@ El potenciómetro tiene 3 patas. Las de los extremos son para la energía y la d
 
 [Image of arduino potentiometer connection diagram]
 
-![Diagrama Potenciometro](./Conexion_F2_L1.jpg)
-*(Sube tu imagen con este nombre: Conexion_F2_L1.jpg)*
+![Diagrama Potenciometro](./Conexion_F2_L1.png)
 
 ---
 

@@ -34,8 +34,7 @@ El LDR no tiene polaridad, pero la conexión es específica:
 [Image of arduino ldr voltage divider connection diagram]
 
 
-![Diagrama LDR](./Conexion_F2_L3.jpg)
-*(Sube tu imagen con este nombre: Conexion_F2_L3.jpg)*
+![Diagrama LDR](./Conexion_F2_L3.png)
 
 ---
 
